@@ -5,16 +5,11 @@ import project2 from "../assets/p1.jpg";
 import project3 from "../assets/p1.jpg";
 import project4 from "../assets/p1.jpg";
 import project5 from "../assets/p1.jpg";
-import project_person from "../assets/p1.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
 import Navbar from '../Components/Navbar'
-
-// import { Pagination,  } from "swiper";
 import { Autoplay, Pagination } from "swiper/modules"
-// import { Swiper, SwiperSlide } from 'swiper/swiper-react.mjs';
-// import 'swiper/swiper.scss'; 
-// import 'swiper/modules/pagination/pagination.scss'; 
+
 
 const Project = () => {
   const projects = [

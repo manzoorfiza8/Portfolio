@@ -1,43 +1,4 @@
-// import { Link } from "react-router-dom";
-// import {Contact} from "../Pages/Contact"
-// import {Skills} from "../Pages/Skills"
-
-
-// const Navbar = () => {
-//   return (
-//     /* Navbar */
-//     <div className="shadow-md w-full fixed top-0 left-0">
-//       <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
-//         <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800">
-//           <span className="text-3xl text-indigo-600 mr-1 pt-2">
-//             <ion-icon name="logo-ionic"></ion-icon>
-//           </span>
-//           Fiza Manzoor
-//         </div>
-
-//         <div className="md:flex space-x-4">
-//           <Link to="/" className="text-gray-800 hover:text-indigo-600">
-//             About
-//           </Link>
-//           <Link to="/Skills" className="text-gray-800 hover:text-indigo-600">
-//             Skills
-//           </Link>
-//           <Link to="/Projects" className="text-gray-800 hover:text-indigo-600">
-//             Projects
-//           </Link>
-//           <Link to="/Contact" className="text-gray-800 hover:text-indigo-600">
-//             Contact
-//           </Link>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Navbar;
-
 import React, { useEffect, useState } from "react";
-import Theme from "./Theme";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -48,12 +9,9 @@ const Navbar = () => {
     { name: "SKILLS", link: "/Skills" },
     { name: "PROJECTS", link: "/Project" },
     { name: "CONTACT", link: "/Contact" },
-    // { name: "toggle", link: "/Theme" },
-
   ];
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      const nav = document.querySelector("nav");
       window.scrollY > 0 ? setSticky(true) : setSticky(false);
     });
   }, []);

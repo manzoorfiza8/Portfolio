@@ -48,22 +48,8 @@ export default function Contact() {
         });
       };
 
-
-  // const sendEmail = (e) => {
-  //   var params={
-  //     from_name : document.getElemantbid('name').value,
-  //     Email_id : document.getElemantbid('email').value,
-  //     message : document.getElemantbid('msg').value,
-  //    }
-  //   e.preventDefault();
-
-  //   emailjs.sendForm('service_ii5ewnm', 'template_5niqwg2', form.current, 'PFYudbMIh3M4B335E')
-  //     .then((result) => {
-  //         console.log(result.text);
-  //     }, (error) => {
-  //         console.log(error.text);
-  //     });
-  // };
+      const linkedInUrl = 'https://www.linkedin.com/in/fizza-m-1401172b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'; // Replace 'yourprofile' with your LinkedIn profile URL
+      const GithubUrl = 'https://github.com/manzoorfiza8'
 
   return (
     <> 
@@ -86,10 +72,14 @@ export default function Contact() {
             <div className='flex flex-col text-lg'>
   <p className='font-bold mb-2'>Connect with me</p>
   <div className='flex space-x-4 text-lg'>
-    <a href='#'><BsInstagram /></a>
-    <a href='#'><FaGithub /></a>
-    <a href='#'><BsLinkedin /></a>
-    <a href='#'><BsTwitter /></a>
+  <a href={GithubUrl} target="_blank" rel="noopener noreferrer" className='mr-12'>   
+               <BsInstagram /></a>
+              <a href={GithubUrl} target="_blank" rel="noopener noreferrer" className='mr-12'>
+                <FaGithub /></a>
+              <a href={linkedInUrl} target="_blank" rel="noopener noreferrer" className='mr-12'>
+                <BsLinkedin /></a>
+              <a href={GithubUrl} target="_blank" rel="noopener noreferrer" className='mr-12'>  
+                <BsTwitter /></a>
   </div>
 </div>
 

@@ -1,12 +1,6 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
-// import p1 from '../assets/p1.jpg'
-// import fm3 from '../assets/fm3.jpg'
-// import fm4 from '../assets/fm4.jpg'
-// import p4 from '../assets/p4.png'
 import p2 from '../assets/p2.png'
-
-
 import { BsInstagram } from 'react-icons/bs';
 import { BsTwitter } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
@@ -15,47 +9,48 @@ import Theme from '../Components/Theme'
 
 export default function Home() {
   const linkedInUrl = 'https://www.linkedin.com/in/fizza-m-1401172b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'; // Replace 'yourprofile' with your LinkedIn profile URL
-  const GithubUrl ='https://github.com/manzoorfiza8'
+  const GithubUrl = 'https://github.com/manzoorfiza8'
   return (
-      <>
-           <Navbar/>   
-           {/* <div className={`${window.className} 
+    <>
+      <Navbar />
+      {/* <div className={`${window.className} 
       dark:bg-medium`> */}
       <div>
         <div className="flex">
-         {/* Left side with text area for name and introduction */}
-<div className="flex flex-col justify-center pl-24 pb-4 pt-48 pr-8">
-  <h1 className="text-2xl font-bold mb-1">Fiza Manzoor</h1>
-  <h1 className="text-6xl font-bold mb-1 text-blue-900 extra-bold">Front-End Developer</h1>
-  <h1 className="text-6xl font-bold  text-blue-900 mb-2">& Web Designer</h1>
-  <p className="text-base text-12l">
-    A Passionate front-end developer dedicated to implementing innovative designs,
-    <br></br>
-    transforming ideas into captivating web experiences
-  </p>
-  <div className='flex pl-6 pt-4 text-lg'>
-  <a href='#' className='mr-12'><BsInstagram /></a>
-  <a href={GithubUrl} target="_blank" rel="noopener noreferrer" className='mr-12'>
-<FaGithub /></a>
-  <a href={linkedInUrl} target="_blank" rel="noopener noreferrer" className='mr-12'>
-      <BsLinkedin />
-    </a>
-  <a href='#'><BsTwitter /></a>
-</div>
-<div className="flex flex-1 px-4 py-7 pl-0 pr-84 mr-16 pt-28 justify-end">
-            <Theme />
+          {/* Left side with text area for name and introduction */}
+          <div className="flex flex-col justify-center pl-24 pb-4 pt-48 pr-8">
+            <h1 className="text-2xl font-bold mb-1">Fiza Manzoor</h1>
+            <h1 className="text-6xl font-bold mb-1 text-blue-900 extra-bold">Front-End Developer</h1>
+            <h1 className="text-6xl font-bold  text-blue-900 mb-2">& Web Designer</h1>
+            <p className="text-base text-12l">
+              A Passionate front-end developer dedicated to implementing innovative designs,
+              <br></br>
+              transforming ideas into captivating web experiences
+            </p>
+            <div className='flex pl-6 pt-4 text-lg'>
+              <a href={GithubUrl} target="_blank" rel="noopener noreferrer" className='mr-12'>   
+               <BsInstagram /></a>
+              <a href={GithubUrl} target="_blank" rel="noopener noreferrer" className='mr-12'>
+                <FaGithub /></a>
+              <a href={linkedInUrl} target="_blank" rel="noopener noreferrer" className='mr-12'>
+                <BsLinkedin /></a>
+              <a href={GithubUrl} target="_blank" rel="noopener noreferrer" className='mr-12'>  
+                <BsTwitter /></a>
+            </div>
+            <div className="flex flex-1 px-4 py-7 pl-0 pr-84 mr-16 pt-28 justify-end">
+              <Theme />
+            </div>
           </div>
-</div>
 
 
           {/* Right side with the image */}
           <img
-  // src={p1}
-  src={p2}
+            // src={p1}
+            src={p2}
 
-  alt="Alt Text"
-  className="absolute right-12 h-500 w-800 pt-22 mt-20 ml-998 pl-1555 pr-15"
-/>
+            alt="Alt Text"
+            className="absolute right-12 h-500 w-800 pt-22 mt-20 ml-998 pl-1555 pr-15"
+          />
 
         </div>
       </div>
@@ -75,7 +70,7 @@ export default function Home() {
 //     "logo-twitter",
 //   ];
 //   return (
-//     <> 
+//     <>
 //     <Navbar />
 //     <section
 //       id="home"
