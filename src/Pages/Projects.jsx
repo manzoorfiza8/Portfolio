@@ -1,9 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import project1 from "../assets/p1.jpg";
+import project1 from "../assets/w2.jpg";
 import project2 from "../assets/p1.jpg";
 import project3 from "../assets/p1.jpg";
-import project4 from "../assets/p1.jpg";
+import project4 from "../assets/package.jpg";
 import project5 from "../assets/p1.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -15,8 +15,8 @@ const Project = () => {
   const projects = [
     {
       img: project1,
-      name: "Movie App",
-      github_link: "https://github.com/Sridhar-C-25",
+      name: "weather Forecast App",
+      github_link: "https://github.com/manzoorfiza8/Weather_APP.git",
       live_link: "https://myreactflix.netlify.app",
     },
     {
@@ -33,7 +33,7 @@ const Project = () => {
     },
     {
       img: project4,
-      name: "React Nav",
+      name: "Trip  tonic",
       github_link:
         "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
       live_link: "https://reacttailwindnavbar.netlify.app",
